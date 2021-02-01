@@ -32,10 +32,31 @@ $db = [
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>php-google-faq</title>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
        <style>
             body{
                 width: 70%;
                 margin:0 auto;
+                font-family: 'Roboto', sans-serif;
+            }
+            h2 {
+                color: #3c4043;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                margin: 0;
+                padding: 64px 0 0 0;
+            }
+            p{
+                color: rgba(0,0,0,0.87);
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: .2px;
+                line-height: 24px;
+                padding-top: 20px;
+                margin: 10px 0;
             }
        </style>
     </head>
