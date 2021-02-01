@@ -5,6 +5,7 @@ https://policies.google.com/faq.
 Ci sono diverse domande con relative risposte.
 Gestire il “Database” e la visualizzazione di queste domande e risposte con PHP.
 */
+$nav_link = ["Introduzione", "Norme sulla privacy", "Termini di servizio", "Tecnologie", "Domande frequenti"];
 $db = [
   [
     'domanda' => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
@@ -136,11 +137,11 @@ $db = [
         </div>
       </div>
       <nav>
-        <a href="#">Introduzione</a>
-        <a href="#">Norme sulla privacy</a>
-        <a href="#">Termini di servizio</a>
-        <a href="#">Tecnologie</a>
-        <a href="#">Domande frequenti</a>
+        <?php
+          foreach ($nav_link as $link) { ?>
+            <a href="#"><?php echo $link; ?></a>
+          <?php }
+        ?>
       </nav>
     </header>
 
